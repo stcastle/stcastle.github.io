@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Sam's research page.">
+    <meta name="author" content="Sam Castle">
+    <!--<link rel="icon" href="favicon.ico">-->
+
+    <title>Sam: Research</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Social Media Buttons. -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="custom-css/jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script src="assets/js/ie-emulation-modes-warning.js"></script>-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="index.html">Home</a></li>
+            <li role="presentation" class="active"><a href="#">Research</a></li>
+            <li role="presentation"><a href="about.html">About</a></li>
+            <li role="presentation"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Sam Castle</h3>
+      </div>
+
+      <!--<div class="jumbotron">
+        <p class="lead" "text-left">-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Research</h1>
+            </div>
+            <div class="col-md-6">
+                <a href="http://ictd.cs.washington.edu">
+                    <img class="img-responsive"
+                        src="images/ictd-website-logo.png"
+                        alt="ICTD logo"/>
+                </a>
+            </div>
+        </div>
+        <p>
+            My research focuses on how technology can improve the lives of underserved populations in low-income regions.
+            This involves work in in Computer Security and Privacy, HCI, Systems, Networks, and Data Analytics.
+        </p>
+        <p>
+            I am currently working in the
+            <a href="http://ictd.cs.washington.edu">ICTD Lab at UW</a>
+            and am advised by
+            <a href="http://www.cs.washington.edu/people/faculty/anderson"> Richard Anderson</a>.
+        </p>
+        <p>
+            In the past, I have worked on a wide range of projects encompassing computer science, math, and physics.
+            The most notable examples are my previous internships at the
+            <a href="http://www.nasa.gov/centers/marshall/home/index.html"> NASA Marshall Space Flight Center</a>,
+            where I studied
+            <a href="http://www.amsmeteors.org/fireballs/">fireballs</a>,
+            and the
+            <a href="http://www.ctio.noao.edu/noao/"> Cerro Tololo Inter-American Observatory</a>,
+            where I researched the use of computer vision algorithms on astronomical data sets (pun intended).
+        </p>
+        <p>
+            I have been working in the field of computing for development since January 2016.
+            Primarily, I have worked on digital financial services for the unbanked.
+            I work in close collaboration with the
+            <a href="http://www.gatesfoundation.org/What-We-Do/Global-Development/Financial-Services-for-the-Poor"> Bill and Melinda Gates Foundation</a>.
+        </p>
+
+    </div> <!--container-->
+
+    <!-- Projects -->
+    <!-- In the future, change this to a publications section. -->
+    <div class="container">
+        <h2>
+            <a name="projects">#</a>
+            Projects
+        </h2>
+        <h3>Branchless Banking Android Applications</h3>
+        <p>
+            Branchless banking in the developing world provides much needed financial services to the unbanked.
+            Increasing smartphone usage along with cellular internet connectivity provides an opportunity to deliver these services more conveniently.
+            There is an implied trust on such applications to communicate securely.
+            We examined the existing security vulnerabilities and how easy it is for a novice developer to build a secured app.
+            We discovered that a developer needs tremendous knowledge about current security practices, which does not fit well with the attitude of blindly using default parameters or pasting from outdated message boards.
+            We implemented three types of secured connections between our Android app and server to recreate difficulties, hard-to-understand configuration requirements, and potential mistakes.
+            Based on this analysis, we defined a specification for an Android cryptographic library and server OpenSSL wrapper library that selects default values based on current best practices.
+            We concluded, not surprisingly, that developers should use SSL/TLS rather than implementing their own version of encryption.
+        </p>
+        <h3>Digital Financial Services Literature Review</h3>
+        <p>
+            We are conducting a survey of research in financial services for the unbanked published in mainstream Computer Science literature.
+            The white paper will soon be available.
+        </p>
+
+      <footer class="footer">
+        <p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!--Download jQuery library from a CDN.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="dist/js/bootstrap.min.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
