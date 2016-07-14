@@ -1,0 +1,258 @@
+%===============================================================================
+\RequirePackage[l2tabu, orthodox]{nag}  % Complain about outdated commands.
+
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+% Banking theme is more compact and eliminates the picture.
+%\moderncvtheme[blue]{banking}
+
+\usepackage{moderntimeline}
+% Set the scale.
+\tlmaxdates{2010}{2020}
+% Set the line width.
+% This automatically sets the space under the top label to be 1pt more
+\tlwidth{0.6ex}
+% Set the labels text size
+\tltext{\footnotesize}
+
+\usepackage[T1]{fontenc}
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths% required when changes are made to page layout lengths
+
+% Activate to begin paragraphs with an empty line rather than an indent
+%\usepackage[parfill]{parskip}
+\usepackage{graphicx}
+    \graphicspath{ {./images/}}
+    % Set default image width. This will disrupt scale settings.
+    \setkeys{Gin}{width=0.9\linewidth}
+    % Allow conversion of eps to pdf format. For pdflatex.
+    % May need to give write permission to terminal.
+    % pdflatex -shell-escape <file>.
+    \usepackage{epstopdf}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{microtype}  % Improve spacing between words and letters.
+\usepackage{cleveref}
+\DeclareGraphicsRule{.tif}{png}{.png}
+    {`convert #1 `dirname #1`/`basename #1.tif`.png}
+
+
+
+% Fancy page numbering
+% Maybe this is dependent on LaTeX build and version of moderncv?
+% Remove these for troubleshooting.
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+\fancyfoot[RE,LO]{\footnotesize } % other info in "inner" position of footer line
+\pagestyle{fancy}
+\rfoot{\thepage\ of \pageref{LastPage}}
+
+% -----------------------------------
+% BIBLIOGRAPHY
+%\usepackage[style=alphabetic,sorting=ynt,backend=biber]{biblatex}
+\usepackage[
+	style=numeric,
+	backend=biber,
+	doi=false,
+	url=false,
+	isbn=false
+]{biblatex}
+\addbibresource{sample.bib}
+% -----------------------------------
+
+% -----------------------------------
+ % PERSONAL DATA
+\firstname{Sam}
+\lastname{Castle}
+%\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\title{Computer Science Researcher}
+\address{185 Stevens Way}{Box 352350}{Seattle, WA 98195}    % optional, remove the line if not wanted
+%\mobile{+1 864-207-6285}                    % optional, remove the line if not wanted
+%\phone{<Phone number>}                      % optional, remove the line if not wanted
+\email{stcastle@cs.washington.edu}                      % optional, remove the line if not wanted
+\extrainfo{\url{www.samcastle.com}} % optional, remove the line if not wanted
+% add github
+%\photo[84pt]{small-sam-michael-wedding.png}                % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{``Success is the ability to go from failure to failure without losing your enthusiasm.'' --- Winston Churchill}    % optional, remove the line if not wanted
+%\quote{Practical, Purposeful, Passionate Research.}
+% -----------------------------------
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\vspace{-10mm}
+
+% -----------------------------------------------
+% SUMMARY
+\section{Summary}
+\cvline{}{
+  %\small I am a current PhD student in
+  %\href{http://www.cs.washington.edu}{Computer Science at the University of
+  %Washington.}
+  My research focuses on how technology can improve the lives of underserved
+  populations in low-income regions.
+  This involves work in in Computer Security and Privacy, HCI, Systems,
+  Networks, and Data Analytics.
+}
+% -----------------------------------------------
+
+% -----------------------------------------------
+% OBJECTIVE
+%\section{Objective}
+%\cvline{}{\Large <Desidered employment>}
+%\cvline{}{\small <summary>}
+% -----------------------------------------------
+
+% -----------------------------------------------
+% EDUCATION
+\section{Education}
+
+\tlcventry{2015}{0}{PhD in Computer Science}
+{\href{http://cs.washington.edu}{University of Washington}}{Seattle}{WA}
+{\href{http://ictd.cs.washington.edu/people.html}{ICTD Lab}:
+Information and Communication Technologies for Development
+}
+
+\tlcventry{2010}{2015}{BS in Mathematics}{Davidson College}{Davidson}{NC}
+{Summa Cum Laude, Overall GPA:~4.00 out of 4.00\\
+Minor in Astrophysics} % arguments 3 to 6 are optional
+% -----------------------------------------------
+
+% -----------------------------------------------
+% RESEARCH PROJECTS
+\section{Research Projects}
+
+\subsection{Current}
+%\cvline{}{\textbf{Branchless Banking Android Applications}}
+\tlcventry{2016}{0}{Branchless Banking Android Applications}{}{}{}
+{We are developing a prototype Android application for branchless banking with
+a focus on security and privacy in the developing world.
+We focus on server [mis]configurations and propose an OpenSSL wrapper library.
+Future work will survey the developers who are working on deployed branchless banking applications.}
+
+\tlcventry{2016}{0}{Digital Financial Services: Literature Review}{}{}{}{
+We are conducting a survey of research in financial services for the unbanked published in mainstream Computer Science literature.
+The white paper will soon be available at \href{http://ictd.cs.washington.edu}{http://ictd.cs.washington.edu}.
+}
+
+%\subsection{Previous}
+
+% -----------------------------------------------
+
+% -----------------------------------------------
+% WORK EXPERIENCE
+\section{Work Experience}
+
+\subsection{Teaching}
+\vspace{-3mm}
+
+\tldatelabelcventry{2015}{Fall 2015}{CSE 311: Foundations of Computing I}
+{University of Washington}{Seattle}{WA}
+{
+\begin{itemize}
+  \item[--] Teaching Assistant under James Lee and Shayan Oveis Gharan.
+  \item[--] Taught a weekly section of 30 students.
+  \item[--] Led weekly office hour instruction.
+\end{itemize}
+} % end tlcventry
+
+\vspace{1mm}
+\subsection{Internships}
+\vspace{-3mm}
+
+\tldatelabelcventry{2015}{Sp 2015}{NSF REU Student}{Cerro Tololo
+Inter-American Observatory}{La Serena}{Chile}
+{Developed Automated image processing tools in Python to study the
+shell elliptical galaxy NGC 3923.}
+
+%\tlcventry[blue]{2006}{0}{Systems Engineer}{\href{http://www.nga.gov}{NGA}}
+\tlcventry{2013}{2014}{Modeling \& Simulation Intern}{\href{http://www.nga.mil}{National Geospatial-Intelligence Agency (NGA)}}{Department of Defense}{USA}
+{Summers 2013 and 2014.
+\begin{itemize}
+	\item[--] Worked with technical subject matter and tools in the application
+  of information technology for modeling and simulation.
+\end{itemize}} % end tlcventry
+
+\tldatelabelcventry{2012}{Fall 2012}{Meteor Physics Intern}{NASA Marshall Space Flight Center}{Huntsville}{AL}
+{Researched the particle size distribution of fragmenting meteors and assisted
+the \href{https://www.nasa.gov/offices/meo/home/index.html}{NASA Meteoroid
+Environment Office.}}
+
+% END WORK EXPERIENCE
+% -----------------------------------------------
+
+% -----------------------------------------------
+% TECHNICAL SKILLS
+\section{Technical Skills}
+
+% Development
+\subsection{Development}
+%\cvline{Languages}{Java, C++, Python, Perl, MATLAB, Mathematica, Android, Shell/Bash, GNU Make}
+\cvcomputer{Languages}{Java, C++, Python, Perl, MATLAB, Mathematica, Android, Shell/Bash, GNU Make}
+{Web}{HTML, CSS, JavaScript, Bootstrap, PHP}
+\cvcomputer{Methods}{Object-Oriented Programming, Machine Learning, Formal Verification}
+{Databases}{SQL, MySQL}
+
+% Systems and Network Administration
+\subsection{Systems and Network Administration}
+\cvcomputer{Operating Systems}{GNU/Linux (Debian, Ubuntu, Fedora), MacOS X, Windows}
+{Security}{SSL/TLS, PGP, OTR, OpenSSL, Tor}
+\cvcomputer{Web}{Apache}
+{Virtualization}{VNC, Wine}
+
+% Office and tools
+\subsection{Office and tools}
+\cvcomputer{Office}{OpenOffice/LibreOffice, Microsoft Office, Gimp}
+{Editing}{\LaTeX, Vim, Emacs, Eclipse IDE}
+\cvcomputer{Management}{Git, GitHub}
+{Tools}{Gnuplot, Wine}
+
+% END TECHNICAL SKILLS
+% -----------------------------------------------
+
+
+% -----------------------------------------------
+% PUBLICATIONS
+%\section{Publications}
+%\nocite{*}
+%\printbibliography[heading=none]
+% -----------------------------------------------
+
+% -----------------------------------------------
+% FOREIGN LANGUAGES
+\section{Foreign Languages}
+\cvline{English}{Native \hfill \emph{Mother tongue}}
+\cvline{German}{Minimum Professional Proficiency \hfill \emph{5 years in school, foreign exchange program}}
+\cvline{Spanish}{Elementary Proficiency \hfill \emph{Studied abroad in Chile, occasional practice}}
+% Another possibility
+%\cvcomputer{German}{Minimum Professional Proficiency} {}{\emph{Studied 5 years in school, teaching assistant, foreign exchange program}}
+% -----------------------------------------------
+
+% -----------------------------------------------
+% PERSONAL
+\section{Personal}
+\cvline{Memberships}{Phi Beta Kappa, Sigma Pi Sigma, Omicron Delta Kappa}
+\cvline{Offices}{Defense Advisor to Davidson College Honor Council (2013-2014), President of Davidson Outdoors (2013)}
+\cvline{Hobbies}{Hiking, cycling, soccer, reading}
+% -----------------------------------------------
+
+
+\begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=south, yshift=0.25cm] at (current page.south) {\textit{Last update: \today}};
+\end{tikzpicture}
+
+\end{document}
