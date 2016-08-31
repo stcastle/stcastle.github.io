@@ -1,14 +1,15 @@
-### Keybase proof
+==================================================================
+https://keybase.io/castle
+--------------------------------------------------------------------
 
 I hereby claim:
 
-  * I am stcastle on github.
+  * I am an admin of http://samcastle.com
   * I am castle (https://keybase.io/castle) on keybase.
-  * I have a public key whose fingerprint is CBCC 9CFA 64DE 38A2 C15B  1861 D033 44AB D740 F8F3
+  * I have a public key with fingerprint CBCC 9CFA 64DE 38A2 C15B  1861 D033 44AB D740 F8F3
 
-To claim this, I am signing this object:
+To do so, I am signing this object:
 
-```json
 {
     "body": {
         "key": {
@@ -20,61 +21,55 @@ To claim this, I am signing this object:
             "uid": "913a53d7df2fad651bed414afb045319",
             "username": "castle"
         },
+        "revoke": {
+            "sig_ids": [
+                "d3a88599373b035fe37fee159aacc49a3cdb0f84a9e64072c42c3b9a319ea44d0f"
+            ]
+        },
         "service": {
-            "name": "github",
-            "username": "stcastle"
+            "hostname": "samcastle.com",
+            "protocol": "http:"
         },
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1472601851,
+    "ctime": 1472660341,
     "expire_in": 157680000,
-    "prev": "308e3c8568e92930bdd56e0fdb96159e1ec1f1904f57faee1a5b6d3b392905a4",
-    "seqno": 3,
+    "prev": "e313f7eb4e776cf41817b31c8cb0c6630c32915aeab84e9a82875e17edb5405b",
+    "seqno": 9,
     "tag": "signature"
 }
-```
 
-with the key [CBCC 9CFA 64DE 38A2 C15B  1861 D033 44AB D740 F8F3](https://keybase.io/castle), yielding the signature:
+which yields the signature:
 
-```
 -----BEGIN PGP MESSAGE-----
 Version: Keybase OpenPGP v2.0.56
 Comment: https://keybase.io/crypto
 
-yMISAnicrZJvaI1RHMfvHcYuW/OvhJmevDDudM495zz3PBdJspV/LzYmTV3nPOec
-6+ly7/U8z72zRhJ5sbUYeYOtrCZMXqkVJbYZIWUZYgojhBZpLzB5nkVSXjpvTud7
-vp9f39+vX2/huEAoWDB+uOGAiPUF71xvzgY298371qDxtKjXYg1aUo5dcoeQjhtP
-WkKLaQACyLBCggIMMBOKcEABVMDkVCcGIIRFCQWmialhRhRXGHNJIYwqYiiEKI0o
-BpgW1pSVSkg7Y1sp1ytrctM0TMV0LCSiLGJCwiHVoQAIYcy4iGKgqEIeuD3t+IQX
-jjNHLrHSnuY94mPx/uH/z7mzY+UMiBhBIiqUpwudQC4FhpgpDjBB0PCNjrRTbKf0
-u2OOu0Nqe8Oap+UsU/pj/fWXsNztWf6333H/EG59xpfqJI//guPcSglveh6Tk7Zj
-pVNaDHpO07V8GuJoRAeQEhjW5O6MZcu45TtIVKfAO2EtY8ucVxIBKpFJiU6lETEQ
-4EIQXQIluKFDYkgoTaigAbAiUcWkhIxwXSCOPDcgDGt+O7tSaS2GvJgs4Qe3Einm
-Zm0vefe1reMDwVAgf0Kev1WBUEHx710baZ44WpoeuNMy99nQmqaQuYXWvNnQkR0w
-XqS//GjaUF45WFxf1DhY1v1p80jt7OJXyeGFR2+33V+f63jf9rjRzpYWtD0yFtQd
-0fDX0zPCH7+f3di6eHGFu7906Errjc6Sq3VlnbWbtoYXHX9Um7cqI09cPlXVNbVq
-4iBamnUqgsGmKYUuuxdv7HnqXDw2pz348uba/j0D4+ryv/ckz5cta3/+rrxnm37Q
-KenNL5q0etqT1/1dl+Z/Dq1cUQ6rp2dGz626dfJu5kLk4bHKqs5Q6/CswmrIajq7
-E+9KatZNfv2g//iQ3bxcP7R8VvuH3n1P2z700TPdN2fssztahva/PRwpTM68PpL7
-CTizOsc=
-=yXFg
+yMJnAnicrVJbaFRHGN7VmJpFaQUtigXt0IJiGmZ2Zs6Zs1ovUIlI0yASBC+sc909
+bLJns+dkNaYWjGiJxYZCWqEVqT6Y1jtFSikVtHi3SFptFYx41wdTpPEuFp0TpU99
+dF6G+ef7v8s/c3j08EQqWVN1p2OtyhxNnjr0T1ti0bHhbR1ABKodZDpAQQ9tulnp
+MMoWfAUyACKIODFYMUgg4cpQARlEBkrBHOpBSrlLGZSSME+mjTCECM0Qcg31DMaM
+pQ2HHNQC4xdzulwq+8XI0kohpScNd4jSmPG0RFQg5iAFMSaEC+USaJjBtjEfhHGH
+NSd4qOv8wNbsITtk73/wr9h32xCdhzCnWLnK2LpyKBJaEUS4EZBQjLwYGOpykbfo
+OB0Po2YNVteCsq4EBR1PNfRz1nIIMkuAwpwx6nnYxQJiajR2jdaIepxbPx7HUgmb
+hnBPOwS6aUnSEgtbR57mhChowDLLbfUqvhwij2f0UjvkLS/k62TQYm2VykEUyKDZ
+XuWjqJSJXUXtpRi6QovsS5Ks8IvKvpBtqOhy6AdFkEEWKSM/ZkXETTsOxATVAr2y
+5Jd11o8R1HUYtCuW0RVLqTHCxtWCaNd1pCGIIVdgJJkUUDoOhhKnPUS55oIR7XGW
+Zi7VyNVKUAKpAHGs1mIAMp61yXNxID9X5FFb2c7z14NLqxLJVKJ6xLD45yZSNW/8
+958HRyb2gO76L5JPfhlVJeq/vxj9sBHXzBg3/qMZeycvOja1dubOq6ff2oj7s+/m
+Tl7/rGnxb/N4f2XVmnq+b1bv9jtdcvc0/MGZecWfxds7BhObLzS6c2/+Ma51wmub
+5vSFR1bxL6c86ll6uHDinvDXzf7rzXzXozmvr1h25cbBSee3Tj9+dfeJ052/b214
+f3l36tbHqye2bmn698/23mfB8vufD5xcf33Ue51NuPfS5bxy5n/aM5D/ZsOSwt3v
+duys/mnt/g0fXtw32HhuTPfmx13VN5728WsNtxNf9//d05WqOrdXowOfbKuevf9h
+R+euu2pkwwNn/rfvLDz0LFm3afEedfnstkl9Yxu/ejCw5ccFzwFkg15p
+=snjU
 -----END PGP MESSAGE-----
 
-```
+And finally, I am proving ownership of this host by posting or
+appending to this document.
 
-And finally, I am proving ownership of the github account by posting this as a gist.
+View my publicly-auditable identity here: https://keybase.io/castle
 
-### My publicly-auditable identity:
-
-https://keybase.io/castle
-
-### From the command line:
-
-Consider the [keybase command line program](https://keybase.io/download).
-
-```bash
-# look me up
-keybase id castle
-```
+==================================================================
 
